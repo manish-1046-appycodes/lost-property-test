@@ -95,7 +95,9 @@ const Footer = ({ border }) => {
             </p>
           </aside>
           <aside className="pl-20 lg:pl-0 lg:flex lg:w-1/2 lg:space-x-12 justify-end">
-            <button onClick={showPopup}>Subscribe to newsletter</button>
+            <button id="show-mailchimp-popup" onClick={showPopup}>
+              Subscribe to newsletter
+            </button>
             <ul>
               <li>
                 <a

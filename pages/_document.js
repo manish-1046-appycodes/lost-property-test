@@ -6,6 +6,14 @@ class MyDocument extends Document {
     return { ...initialProps };
   }
 
+  componentDidMount() {
+    // Run your scripts here after the page loads
+    // Example: Load Mailchimp popup after page loads
+    setTimeout(() => {
+      document.querySelector("#show-mailchimp-popup").click();
+    }, 1000);
+  }
+
   render() {
     return (
       <Html lang="en-GB">
