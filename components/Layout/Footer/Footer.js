@@ -95,7 +95,13 @@ const Footer = ({ border }) => {
             </p>
           </aside>
           <aside className="pl-20 lg:pl-0 lg:flex lg:w-1/2 lg:space-x-12 justify-end">
-            <button id="show-mailchimp-popup" onClick={showPopup}>
+            <button
+              id="show-mailchimp-popup"
+              onClick={() => {
+                console.log("Button Clicked for mailchimp popup");
+                showPopup();
+              }}
+            >
               Subscribe to newsletter
             </button>
             <ul>
