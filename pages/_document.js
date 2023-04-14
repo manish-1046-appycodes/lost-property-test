@@ -9,9 +9,9 @@ class MyDocument extends Document {
   componentDidMount() {
     // Run your scripts here after the page loads
     // Example: Load Mailchimp popup after page loads
-    setTimeout(() => {
-      document.querySelector("#show-mailchimp-popup").click();
-    }, 1000);
+    // setTimeout(() => {
+    //   document.querySelector("#show-mailchimp-popup").click();
+    // }, 1000);
   }
 
   render() {
