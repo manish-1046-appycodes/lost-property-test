@@ -19,12 +19,12 @@ const Footer = ({ border }) => {
     console.log("Show popup function running");
 
     //unsetting the cookie
-    document.cookie =
-      "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
-    document.cookie =
-      "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    // document.cookie =
+    //   "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+    // document.cookie =
+    //   "MCPopupSubscribed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
 
-    // localhost
+    // mailchimp script manish
     !(function (c, h, i, m, p) {
       (m = c.createElement(h)),
         (p = c.getElementsByTagName(h)[0]),
@@ -34,21 +34,8 @@ const Footer = ({ border }) => {
     })(
       document,
       "script",
-      "https://chimpstatic.com/mcjs-connected/js/users/5a1c502d9787103942bfc76a5/7d3683af1b429d8f42b9fda83.js"
+      "https://chimpstatic.com/mcjs-connected/js/users/5a1c502d9787103942bfc76a5/a15b3ae73e898f7ad1c2167dc.js"
     );
-
-    // live url
-    // !(function (c, h, i, m, p) {
-    //   (m = c.createElement(h)),
-    //     (p = c.getElementsByTagName(h)[0]),
-    //     (m.async = 1),
-    //     (m.src = i),
-    //     p.parentNode.insertBefore(m, p);
-    // })(
-    //   document,
-    //   "script",
-    //   "https://chimpstatic.com/mcjs-connected/js/users/5a1c502d9787103942bfc76a5/a15b3ae73e898f7ad1c2167dc.js"
-    // );
   };
 
   return (
