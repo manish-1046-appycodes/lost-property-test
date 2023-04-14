@@ -10,7 +10,6 @@ class MyDocument extends Document {
     return (
       <Html lang="en-GB">
         <Head>
-          {/* remove auto scroll to footer for SSR pages */}
           <script
             type="text/javascript"
             id="mcjs"
@@ -20,6 +19,7 @@ class MyDocument extends Document {
             }}
           />
 
+          {/* live url */}
           <script
             type="text/javascript"
             id="mcjs"
@@ -27,6 +27,35 @@ class MyDocument extends Document {
               __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5a1c502d9787103942bfc76a5/a15b3ae73e898f7ad1c2167dc.js")`,
             }}
           />
+
+          {/* live url */}
+          <script
+            type="text/javascript"
+            id="mcjs"
+            dangerouslySetInnerHTML={{
+              __html: `  !(function (c, h, i, m, p) {
+                    (m = c.createElement(h)),
+                      (p = c.getElementsByTagName(h)[0]),
+                      (m.async = 1),
+                      (m.src = i),
+                      p.parentNode.insertBefore(m, p);
+                  })(
+                    document,
+                    "script",
+                    "https://chimpstatic.com/mcjs-connected/js/users/5a1c502d9787103942bfc76a5/7d3683af1b429d8f42b9fda83.js"
+                  );
+                }, 1000);`,
+            }}
+          />
+
+          {/* localhost */}
+          {/* <script
+            type="text/javascript"
+            id="mcjs"
+            dangerouslySetInnerHTML={{
+              __html: `!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5a1c502d9787103942bfc76a5/7d3683af1b429d8f42b9fda83.js")`,
+            }}
+          /> */}
         </Head>
         <body>
           <Main />
