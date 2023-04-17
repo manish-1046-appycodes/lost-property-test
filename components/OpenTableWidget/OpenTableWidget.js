@@ -14,16 +14,31 @@ const OpenTableWidget = ({ carouselItems }) => {
 
     // add event listener to the form inside the iframe
     script.onload = () => {
-      const iframe = openTableWidget.querySelector("iframe");
+      const iframe = document.querySelector("#openTableWidget iframe");
       const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-      iframeDoc.addEventListener("submit", (e) => {
+      const form = iframeDoc.querySelector(".ot-dtp-picker-form");
+      form.addEventListener("submit", (e) => {
+        console.log("yaaa form submitted ..... @@@@@@");
+        console.log("yaaa form submitted ..... @@@@@@");
+        console.log("yaaa form submitted ..... @@@@@@");
+        console.log("yaaa form submitted ..... @@@@@@");
         console.log(e.target);
       });
     };
   }, []);
 
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    const iframe = document.querySelector("#openTableWidget iframe");
+    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
+    const form = iframeDoc.querySelector(".ot-dtp-picker-form");
+    form.submit();
+  };
+
   return (
-    <div id="openTableWidget" className="pb-28 lg:pb-52 flex justify-center" />
+    <div id="openTableWidget" className="pb-28 lg:pb-52 flex justify-center">
+      <button onClick={handleFormSubmit}>Book a table</button>
+    </div>
   );
 };
 
