@@ -18,7 +18,6 @@ const Footer = ({ border }) => {
   const showPopup = () => {
     console.log("Show popup function running");
 
-    // mailchimp script manish
     !(function (c, h, i, m, p) {
       (m = c.createElement(h)),
         (p = c.getElementsByTagName(h)[0]),
@@ -28,7 +27,7 @@ const Footer = ({ border }) => {
     })(
       document,
       "script",
-      "https://chimpstatic.com/mcjs-connected/js/users/5a1c502d9787103942bfc76a5/a15b3ae73e898f7ad1c2167dc.js"
+      "https://chimpstatic.com/mcjs-connected/js/users/e531d17fe22bad56eb6bd5377/adbb95630e50cc39579bb1a21.js"
     );
 
     //unsetting the cookie
