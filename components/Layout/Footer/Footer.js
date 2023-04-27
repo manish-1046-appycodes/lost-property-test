@@ -27,7 +27,7 @@ const Footer = ({ border }) => {
     })(
       document,
       "script",
-      "https://chimpstatic.com/mcjs-connected/js/users/e531d17fe22bad56eb6bd5377/adbb95630e50cc39579bb1a21.js"
+      `https://chimpstatic.com/mcjs-connected/js/users/e531d17fe22bad56eb6bd5377/${process.env.NEXT_PUBLIC_MAILCHIMP_ID}.js`
     );
 
     //unsetting the cookie
@@ -50,7 +50,7 @@ const Footer = ({ border }) => {
               Find <em>us</em>
             </h3>
             <address className="pl-20 lg:pl-0 not-italic mr-auto">
-              3-5 Ludgate Hill, London
+              3-5 Ludgate Hill, London,
               <br />
               EC4M 7AA
               <br />

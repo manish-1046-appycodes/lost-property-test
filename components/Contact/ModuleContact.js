@@ -118,7 +118,7 @@ const ModuleContact = ({ settings }) => {
                   <p>
                     3-5 Ludgate Hill,
                     <br />
-                    London <br /> EC4M 7AA{" "}
+                    London, <br /> EC4M 7AA{" "}
                   </p>
                   <p>
                     <a
