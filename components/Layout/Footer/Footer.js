@@ -52,6 +52,8 @@ const Footer = ({ border }) => {
             <address className="pl-20 lg:pl-0 not-italic mr-auto">
               3-5 Ludgate Hill, London
               <br />
+              EC4M 7AA
+              <br />
               <a
                 className="hover:underline"
                 href="mailto:info@lostpropertyhotel.com"
@@ -80,7 +82,7 @@ const Footer = ({ border }) => {
               City Thameslink
             </p>
           </aside>
-          <aside className="pl-20 lg:pl-0 lg:flex lg:w-1/2 lg:space-x-12 justify-end">
+          <aside className="pl-20 lg:pl-0 lg:flex lg:w-1/2 lg:space-x-12 justify-end items-start">
             <button
               id="show-mailchimp-popup"
               onClick={() => {

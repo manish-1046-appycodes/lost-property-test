@@ -19,25 +19,19 @@ const OpenTableWidget = ({ carouselItems }) => {
       const form = iframeDoc.querySelector(".ot-dtp-picker-form");
       if (iframe && iframeDoc && form) {
         form.addEventListener("submit", (e) => {
-          console.log("hello hello");
-          console.log(e.target);
+          if (gtag) {
+            gtag("event", "Clicked Find Table");
+          }
         });
       }
     };
   }, []);
 
-  const handleFormSubmit = (e) => {
-    e.preventDefault();
-    const iframe = document.querySelector("#openTableWidget iframe");
-    const iframeDoc = iframe.contentDocument || iframe.contentWindow.document;
-    const form = iframeDoc.querySelector(".ot-dtp-picker-form");
-    form.submit();
-  };
-
   return (
-    <div id="openTableWidget" className="pb-28 lg:pb-52 flex justify-center">
-      <button onClick={handleFormSubmit}>Book a table</button>
-    </div>
+    <div
+      id="openTableWidget"
+      className="pb-28 lg:pb-52 flex justify-center"
+    ></div>
   );
 };
 
