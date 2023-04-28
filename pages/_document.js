@@ -10,12 +10,12 @@ class MyDocument extends Document {
     return (
       <Html lang="en-GB">
         <Head>
-          {/* <script
+           <script
             defer
             async
             type="text/javascript"
             src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"
-          /> */}
+          /> 
 
           {/* mailchimp script */}
           <script
