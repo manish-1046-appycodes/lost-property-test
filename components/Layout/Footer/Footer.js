@@ -17,7 +17,6 @@ const Footer = ({ border }) => {
 
   const showPopup = () => {
     console.log("Show popup function running");
-
     !(function (c, h, i, m, p) {
       (m = c.createElement(h)),
         (p = c.getElementsByTagName(h)[0]),
@@ -27,10 +26,8 @@ const Footer = ({ border }) => {
     })(
       document,
       "script",
-      `https://chimpstatic.com/mcjs-connected/js/users/e531d17fe22bad56eb6bd5377/${process.env.NEXT_PUBLIC_MAILCHIMP_ID}.js`
+      "https://chimpstatic.com/mcjs-connected/js/users/5a1c502d9787103942bfc76a5/a15b3ae73e898f7ad1c2167dc.js"
     );
-
-    //unsetting the cookie
     document.cookie =
       "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
     document.cookie =
