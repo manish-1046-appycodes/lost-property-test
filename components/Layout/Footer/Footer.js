@@ -26,7 +26,7 @@ const Footer = ({ border }) => {
     })(
       document,
       "script",
-      `https://chimpstatic.com/mcjs-connected/js/users/5a1c502d9787103942bfc76a5/${process.env.NEXT_PUBLIC_MAILCHIMP_ID}.js`
+      `https://chimpstatic.com/mcjs-connected/js/users/${process.env.NEXT_PUBLIC_MAILCHIMP_USER_ID}/${process.env.NEXT_PUBLIC_MAILCHIMP_ID}.js`
     );
     document.cookie =
       "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
